@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: #000000;
+    color: #008000;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    width: 80%;
+    margin: auto;
+}
+
+p:not(.none) {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+}

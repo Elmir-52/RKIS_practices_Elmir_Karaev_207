@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://abrakadabra.fun/uploads/posts/2021-12/1639964550_1-abrakadabra-fun-p-standartnie-foni-telegramma-1.png');
+    background-size: 20%;
+}
+
+a {
+    font-family: 'Roboto';
+    display: block;
+    text-align: right;
+    margin-bottom: 3rem;
+}
+
+h1, h2 {
+    font-family:'Courier New';
+    text-align: center;
+}
+
+ul {
+    font-family: 'Courier New';
+}
+
+.subjects-on-course {
+    list-style: none;
+}
+
+.object {
+    list-style: none;
+}
+
+.subjects-on-course::before {
+    content: '❖';
+}
+
+.object::before {
+    content:'>>';
+}

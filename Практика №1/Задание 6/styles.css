@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+table {
+    margin-bottom: 5rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.third-table {
+    border-collapse: collapse;
+}
+
+.third-table td {
+    border: 3px solid black;
+}

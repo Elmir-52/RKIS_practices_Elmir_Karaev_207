@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New';
+}
+
+table {
+    margin-bottom: 5rem;
+    border-collapse: collapse;
+}
+
+th {
+    border: 2px solid black;
+    background: #bebebe;
+}
+
+td {
+    border: 2px solid black;
+}

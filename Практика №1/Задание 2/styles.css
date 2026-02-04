@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://abrakadabra.fun/uploads/posts/2021-12/1639964550_1-abrakadabra-fun-p-standartnie-foni-telegramma-1.png');
+    background-size: 20%;
+}
+
+h1 {
+    font-family: 'Courier New';
+    font-size: 14px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.one::before {
+    content: '1.';
+}
+
+.one li::before{
+    content: '';
+    display: inline-block;
+    background: #000;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    top: -1px;
+}
+
+.two::before {
+    content: '2.';
+}
+
+.two li::before {
+    content: '✓';
+    margin-right: 8px;
+}
+
+.two-first::before {
+    content: '2.1';
+}
+
+.two-first li::before {
+    content: '';
+    display: inline-block;
+    background: #000;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    top: -3px;
+}
+
+.two-second::before {
+    content: '2.2';
+}
+
+.two-second li {
+    margin-left: 20px;
+}
+
+.two-second li::before {
+    content: 'i.';
+    margin-right: 20px;
+}
+
+.two-second li + li::before {
+    content: 'ii.';
+    margin-right: 20px;
+}
