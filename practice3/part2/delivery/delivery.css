@@ -46,11 +46,32 @@ header nav a {
   font-size: 1.3rem;
 }
 
-.content {
-  width: 96%;
+.delivery-descriptrion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7em;
+  width: 80%;
   margin: auto;
-  position: relative;
-  display: block;
+  padding: 2em 1em;
+  background: #ffffff;
+  border-radius: 16px;
+  filter: invert(1);
+}
+.delivery-descriptrion h2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  width: 55%;
+  background: #E1D5E7;
+  border: 2.5px solid #9673A6;
+  height: 7em;
+  border-radius: 16px;
+  filter: invert(1);
+}
+.delivery-descriptrion img {
+  width: 20%;
 }
 
 /*# sourceMappingURL=delivery.css.map */

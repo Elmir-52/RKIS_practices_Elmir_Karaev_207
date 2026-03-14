@@ -226,6 +226,10 @@ header {
             font-size: 1.2em;
             border: none;
             border-radius: 8px;
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 
@@ -247,10 +251,29 @@ header {
 
 }
 
+.map {
+    @include flex-wrapper;
+    gap: 10em;
+    padding: 1em 3em;
+    background: #ffffff;
+
+    h2 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 3em;
+        font-weight: 400;
+        width: 10em;
+        padding: 0.3em 0;
+        background: #000000;
+        border-radius: 10px;
+    }
+}
+
 .footer {
     width: 100%;
     background: #000;
-    padding: 1em 0;
+    color: #fff;
+    padding: 2em 0;
 
     &__main {
         @include flex-wrapper;
@@ -260,21 +283,28 @@ header {
     }
 
     &__info {
-        color: #fff;
     }
 
     &__social {
-        color: #fff;
     }
 
     &__menu {
-        color: #fff;
+        
+        nav {
+        @include flex-wrapper();
+        gap: 2rem;
+
+            a {
+                color: #fff;
+            }
+        }
     }
 
     &__add {
         @include flex-wrapper;
+        justify-content: center;
         width: 100%;
-        height: 6em;
+        height: 4em;
         color: #fff;
     }
 }
