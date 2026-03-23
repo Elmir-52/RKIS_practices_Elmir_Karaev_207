@@ -9,12 +9,15 @@
     <body>
         <!-- шапка -->
         <header>
-            <img src="https://cdn-icons-png.flaticon.com/512/48/48688.png" alt="лого">
+            <a href="./index.html"><img src="https://cdn-icons-png.flaticon.com/512/48/48688.png" alt="лого"></a>
             <nav>
-                <a href="./index.html">Главная</a>
-                <a href="./cars/cars.html">Каталог</a>
-                <a href="./delivery/delivery.html">Заказать</a>
-                <a href="./filling/filling.html">Запчасти</a>
+                <ul>
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./cars/cars.html">Каталог</a></li>
+                    <li><a href="./delivery/delivery.html">Заказать</a></li>
+                    <li><a href="./filling/filling.html">Запчасти</a></li>
+                    <li><a href="./index.html#feedback">Обратная связь</a></li>
+                </ul>
             </nav>
         </header>
 
@@ -30,47 +33,50 @@
         <!-- Секция для выбора услуги -->
         <section class="select">
             <div class="content">
+                <h2>Наши услуги</h2>
                 <div class="select__cars">
-                    <div class="select__car">
-                        <img src="./images/bmw-x5.webp" alt="">
-                        <hr />
-                        <p>BMW X5</p>
-                    </div>
-                    <div class="select__car">
-                        <img src="https://www.masmotors.ru/resources/models/436/colors/color/2_600x310.webp" alt="">
-                        <hr />
-                        <p>Toyota Camry</p>
-                    </div>
-                    <div class="select__car">
-                        <img src="https://www.unlimitedtuning.nl/media/catalog/product/t/i/tiguan.png" alt="">
-                        <hr />
-                        <p>Volkswagen Tiguan</p>
-                    </div>
-                    <div class="select__car">
-                        <img src="https://www.avtogermes.ru/images/marks/kia/rio/iv-restajling/colors/saw/kia-rio-solaris-krs-i-belyj-sploshnoj.ebad82697a13a56bcdd243df527b2a6f.png" alt="">
-                        <hr />
-                        <p>Kia Rio</p>
-                    </div>
-                    <div class="select__car">
-                        <img src="https://cdn.prod.website-files.com/5ec85520c4dfff034b036be2/6723c4550f61b0ad027ec4be_63bd084f166f74dbd513ade8_WF54060_LITGRE_GreenCarsBlogImageUpdate_BestBuildBMWi4_Body1.webp" alt="">
-                        <hr />
-                        <p>BMW I5</p>
-                    </div>
-                    <div class="select__car">
-                        <img src="https://cdn.skoda-auto.com/images/external/4ccfd7646e5ba84f67c809393effb545/DerivativeIntroductionModule/9991858888551adc2e23c7b2ad2a8a3853f5cd04de3d16320a15b71b2c9e83c8/Default_bp1920_1.webp" alt="">
-                        <hr />
-                        <p>Skoda Octavia</p>
-                    </div>
-                    <div class="select__car">
-                        <img src="https://www.major-auto.ru/images/models/toyota/land_cruiser/14576/14576_medium.jpg" alt="">
-                        <hr />
-                        <p>Toyota Land Cruiser</p>
-                    </div>
-                    <div class="select__car">
-                        <img src="https://cdn.saabre.com/uploads/public/5c5/2ef/c92/5c52efc921c81704929315.jpg" alt="">
-                        <hr />
-                        <p>BMW I8</p>
-                    </div>
+                    <a href="./index.html#feedback" class="select__car">
+                        <div>
+                            <img src="./images/кёрхер.jpg" alt="">
+                        </div>
+                        <p>Мойка Авто</p>
+                    </a>
+                    <a href="./index.html#feedback" class="select__car">
+                        <div>
+                            <img src="./images/канистра.jpg" alt="">
+                        </div>
+                        <p>Замена масла</p>
+                    </a>
+                    <a href="./index.html#feedback" class="select__car">
+                        <div>
+                            <img src="./images/покрышки.jpg" alt="">
+                        </div>
+                        <p>Замена покрышок</p>
+                    </a>
+                    <a href="./index.html#feedback" class="select__car">
+                        <div>
+                            <img src="./images/колесо.jpg" alt="">
+                        </div>
+                        <p>Установка колёс</p>
+                    </a>
+                    <a href="./index.html#feedback" class="select__car">
+                        <div>
+                            <img src="./images/диагностика-авто.png" alt="">
+                        </div>
+                        <p>Диагностика авто</p>
+                    </a>
+                    <a href="./index.html#feedback" class="select__car">
+                        <div>
+                            <img src="./images/свеча-зажигания.png" alt="">
+                        </div>
+                        <p>Замена свечей</p>
+                    </a>
+                    <a href="./index.html#feedback" class="select__car">
+                        <div>
+                            <img src="./images/воздушные-фильры.webp" alt="">
+                        </div>
+                        <p>Замена фильтров</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -144,7 +150,7 @@
         <!-- Секция для блока обратной связи с клиентом -->
         <section class="feedback" id="feedback">
             <div class="content">
-                <div class="form__contact">Заполните анкету и мы позвоним в течении 12 часов</div>
+                <div class="form__contact">Заполните анкету и мы позвоним в течении 2 часов</div>
                 <div class="form__download">
                     <input class="form__input" type="text" placeholder="Введите имя фамилию"/>
                     <input class="form__input" type="tel" placeholder="Введите номер телефона"/>
@@ -173,6 +179,10 @@
                     </div>
                     <div class="footer__social">
                         <p>Мы в социальных сетях</p>
+                        <ul>
+                            <li><a href="https://vk.com">Вконтакте</a></li>
+                            <li><a href="https://instagram.com">Инстаграмм</a></li>
+                        </ul>
                     </div>
                     <div class="footer__menu">
                         <nav>
@@ -185,7 +195,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="footer__add">При создании учебного сайта использовались изображения с портала example.com Источники вдохновения и текстового содержимого: gepardik.ru и www.gepardik.com.</div>
+                <div class="footer__add"><a href="https://bmw.com">БМВ</a> <a href="https://toyota.com">Тойота</a> <a href="https://vw.com">Фольксваген</a> При создании учебного сайта использовались изображения с портала example.com Источники вдохновения и текстового содержимого: gepardik.ru и www.gepardik.com.</div>
             </div>
         </footer>
     </body>

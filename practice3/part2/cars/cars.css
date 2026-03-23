@@ -90,8 +90,15 @@ header nav a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.6em;
+  gap: 0.3em;
   font-size: 1.2em;
+}
+.cars .car .descript__buy-wrap a {
+  color: #fff;
+  background: #000;
+  padding: 0.3em 0.8em;
+  border-radius: 8px;
+  margin-left: 2em;
 }
 
 /*# sourceMappingURL=cars.css.map */

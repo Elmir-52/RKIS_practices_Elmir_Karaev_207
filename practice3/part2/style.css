@@ -30,18 +30,21 @@ header {
   position: relative;
   border-bottom: 2px solid #6c6c6c;
 }
-header img {
+header > a {
   width: 3rem;
   position: absolute;
   left: 2rem;
 }
-header nav {
+header > a img {
+  width: 100%;
+}
+header ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2rem;
 }
-header nav a {
+header ul a {
   color: #000;
   font-size: 1.3rem;
 }
@@ -86,29 +89,46 @@ header nav a {
   width: 100%;
   margin: 0 auto 10em;
 }
+.select h2 {
+  font-size: 2.2em;
+  font-weight: 400;
+  margin-bottom: 1em;
+  text-align: center;
+}
 .select .select__cars {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   place-items: center;
   width: 100%;
-  column-gap: 1.5rem;
+  gap: 1.5rem;
 }
 .select .select__cars .select__car {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   width: 100%;
   height: 16rem;
-  justify-content: space-between;
+  border: 2px solid #562cb8;
+  border-radius: 16px;
 }
-.select .select__cars .select__car img {
-  height: 80%;
+.select .select__cars .select__car div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+  width: 90%;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #562cb8;
 }
-.select .select__cars .select__car hr {
-  width: 80%;
+.select .select__cars .select__car div img {
   height: 100%;
-  background: #000;
+}
+.select .select__cars .select__car p {
+  font-size: 1.2em;
+  color: #000;
 }
 
 .about {
@@ -264,6 +284,10 @@ header nav a {
   width: 100%;
   margin-bottom: 2em;
 }
+.footer__social a {
+  color: #fff;
+  text-decoration: underline;
+}
 .footer__menu nav {
   display: flex;
   flex-direction: row;
@@ -272,15 +296,21 @@ header nav a {
 }
 .footer__menu nav a {
   color: #fff;
+  text-decoration: underline;
 }
 .footer__add {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 1em;
   width: 100%;
   height: 4em;
   color: #fff;
+}
+.footer__add a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
